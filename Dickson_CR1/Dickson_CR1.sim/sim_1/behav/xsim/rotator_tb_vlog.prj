@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Dickson_CR1.srcs/sources_1/new/rotator.sv" \
+"../../../../Dickson_CR1.srcs/sources_1/new/rotator_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
